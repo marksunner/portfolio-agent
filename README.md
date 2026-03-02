@@ -174,8 +174,21 @@ cp -r . /path/to/openclaw/skills/portfolio-agent/
 # Formula: Tactical Severity × Structural Soundness × Jevons Favorability
 ./scripts/contrarian.py score VRT -15 TACTICAL
 
-# Score 60+ = strong opportunity, 30-60 = moderate, <30 = weak
+# Score 60+ = strong, 30-60 = moderate, <30 = weak
 # Structural moves score 0 (not contrarian)
+```
+
+### Earnings Calendar
+
+```bash
+# Upcoming earnings for portfolio holdings
+./scripts/earnings.py upcoming 14
+
+# Check specific symbol
+./scripts/earnings.py check NVDA
+
+# 7-day alert (for pre-market check)
+./scripts/earnings.py alert
 ```
 
 ### Agent Integration

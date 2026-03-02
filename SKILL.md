@@ -82,6 +82,22 @@ $SKILL_DIR/scripts/contrarian.py score <SYMBOL> <DECLINE%> <TACTICAL|STRUCTURAL>
 $SKILL_DIR/scripts/contrarian.py score VRT -15 TACTICAL
 ```
 
+### Earnings Calendar
+
+```bash
+# Show upcoming earnings for portfolio (default 14 days)
+$SKILL_DIR/scripts/earnings.py upcoming [DAYS]
+
+# Check specific symbol's next earnings
+$SKILL_DIR/scripts/earnings.py check <SYMBOL>
+
+# Show earnings within 7 days (for alerting)
+$SKILL_DIR/scripts/earnings.py alert
+
+# This week's earnings calendar
+$SKILL_DIR/scripts/earnings.py week
+```
+
 **Requires:** Finnhub API key in `~/.config/finnhub/api_key`
 
 **Rate Limits (Free Tier):** 60 calls/minute

@@ -42,6 +42,22 @@ $SKILL_DIR/scripts/fh recommendations <SYMBOL>
 $SKILL_DIR/scripts/fh peers <SYMBOL>
 ```
 
+### Classification Tracking
+
+```bash
+# List current When→If classifications
+$SKILL_DIR/scripts/classify.py list
+
+# View classification history for a symbol
+$SKILL_DIR/scripts/classify.py history <SYMBOL>
+
+# Update classification (records change with catalyst)
+$SKILL_DIR/scripts/classify.py update <SYMBOL> <WHEN|TRANSITION|IF> <catalyst description>
+
+# Show recent transitions (last 30 days)
+$SKILL_DIR/scripts/classify.py alerts
+```
+
 **Requires:** Finnhub API key in `~/.config/finnhub/api_key`
 
 **Rate Limits (Free Tier):** 60 calls/minute

@@ -1,0 +1,49 @@
+{
+  "_meta": {
+    "description": "When→If classification history for portfolio holdings",
+    "updated": "2026-03-02",
+    "schema_version": "1.0"
+  },
+  "GOOGL": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - dominant AI infrastructure position"}
+  ],
+  "AMZN": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - AWS + retail moat"}
+  ],
+  "APH": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - physical connector infrastructure"}
+  ],
+  "ANET": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - data center networking leader"}
+  ],
+  "CLS": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - contract manufacturing for AI hardware"}
+  ],
+  "NET": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - edge infrastructure"}
+  ],
+  "CRWV": [
+    {"date": "2026-03-01", "classification": "TRANSITION", "catalyst": "Initial classification - GPU cloud with high capex, unproven unit economics"}
+  ],
+  "GLW": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - fiber optic infrastructure"}
+  ],
+  "LITE": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - optical components for data centers"}
+  ],
+  "NVDA": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - GPU monopoly for AI training"}
+  ],
+  "RKLB": [
+    {"date": "2026-03-01", "classification": "TRANSITION", "catalyst": "Initial classification - space launch economics still proving out"}
+  ],
+  "VRT": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - data center cooling, physical infrastructure"}
+  ],
+  "ETN": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - power management infrastructure"}
+  ],
+  "CEG": [
+    {"date": "2026-03-01", "classification": "WHEN", "catalyst": "Initial classification - nuclear power for data centers"}
+  ]
+}

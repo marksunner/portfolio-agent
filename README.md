@@ -20,10 +20,14 @@ The AI revolution has fundamentally changed how technology companies should be e
 ## Features
 
 - 📊 **Six-Lens Analysis Framework** — Structured methodology for comprehensive equity evaluation
-- 📈 **Real-Time Data Integration** — Finnhub API integration for live quotes, news, and fundamentals
+- 📈 **Real-Time Data Integration** — Finnhub API integration for live quotes, news, financials, and analyst recommendations
 - 🔔 **Automated Alerting** — Configurable thresholds for price moves, news events, and classification changes
 - 📝 **Structured Reporting** — Pre-market and post-market briefing templates
-- 🎯 **Contrarian Detection** — Identifies potential opportunities from tactical overselling
+- 🎯 **Contrarian Scoring** — Formula-based identification of tactical overselling opportunities
+- 📋 **Classification History** — Track When→If transitions over time with catalysts
+- 🔗 **Portfolio-Level Analysis** — Concentration risk and correlated catalyst exposure mapping
+- ⚡ **Lens Interaction Patterns** — Named patterns like "Right Thesis, Wrong Vehicle" for deeper insight
+- 🔍 **Narrative Detection** — Distinguish genuine catalysts from amplified narratives
 
 ## The Six Analytical Lenses
 
@@ -106,7 +110,7 @@ cp -r . /path/to/openclaw/skills/portfolio-agent/
 
 ## Usage
 
-### Basic Commands
+### Market Data Commands
 
 ```bash
 # Get real-time quote
@@ -120,6 +124,58 @@ cp -r . /path/to/openclaw/skills/portfolio-agent/
 
 # Company profile
 ./scripts/fh profile ANET
+
+# Financial metrics (P/E, FCF, margins, debt)
+./scripts/fh financials VRT
+
+# Earnings history with surprises
+./scripts/fh earnings NVDA
+
+# Analyst recommendations and sentiment trend
+./scripts/fh recommendations ANET
+
+# Peer companies for relative valuation
+./scripts/fh peers GOOGL
+```
+
+### Classification Tracking
+
+```bash
+# List current When→If classifications
+./scripts/classify.py list
+
+# View history for a symbol
+./scripts/classify.py history CRWV
+
+# Update classification with catalyst
+./scripts/classify.py update CRWV IF "Q4 losses worse than expected, lawsuit filed"
+
+# Show recent transitions (last 30 days)
+./scripts/classify.py alerts
+```
+
+### Portfolio Analysis
+
+```bash
+# Sector concentration risk
+./scripts/portfolio.py concentration
+
+# Correlated catalyst exposure
+./scripts/portfolio.py correlation
+
+# Full portfolio health summary
+./scripts/portfolio.py summary
+```
+
+### Contrarian Scoring
+
+```bash
+# Calculate contrarian score for a tactical dip
+# Formula: Tactical Severity × Structural Soundness × Jevons Favorability
+./scripts/contrarian.py score VRT -15 TACTICAL
+
+# Score 60+ = strong opportunity, 30-60 = moderate, <30 = weak
+# Structural moves score 0 (not contrarian)
 ```
 
 ### Agent Integration

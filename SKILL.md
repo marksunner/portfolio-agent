@@ -58,6 +58,19 @@ $SKILL_DIR/scripts/classify.py update <SYMBOL> <WHEN|TRANSITION|IF> <catalyst de
 $SKILL_DIR/scripts/classify.py alerts
 ```
 
+### Portfolio-Level Analysis
+
+```bash
+# Analyze sector concentration risk
+$SKILL_DIR/scripts/portfolio.py concentration
+
+# Identify correlated catalyst exposure
+$SKILL_DIR/scripts/portfolio.py correlation
+
+# Full portfolio health summary
+$SKILL_DIR/scripts/portfolio.py summary
+```
+
 **Requires:** Finnhub API key in `~/.config/finnhub/api_key`
 
 **Rate Limits (Free Tier):** 60 calls/minute

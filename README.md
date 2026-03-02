@@ -1,5 +1,7 @@
 # Portfolio Agent
 
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
+
 **An AI-powered investment analysis framework for OpenClaw agents.**
 
 Portfolio Agent provides a structured analytical methodology for evaluating technology and AI-adjacent equities through the lens of disruption risk and opportunity. Designed for use by AI agents providing portfolio monitoring and investment intelligence.

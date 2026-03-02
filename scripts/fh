@@ -1,4 +1,5 @@
 #!/bin/bash
 # Finnhub CLI wrapper - loads API key automatically
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 export FINNHUB_API_KEY=$(cat ~/.config/finnhub/api_key 2>/dev/null)
-python3 ~/clawd/finnhub-cli.py "$@"
+python3 "$SCRIPT_DIR/finnhub-cli.py" "$@"

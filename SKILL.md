@@ -28,6 +28,18 @@ $SKILL_DIR/scripts/fh news <SYMBOL>
 
 # Company profile
 $SKILL_DIR/scripts/fh profile <SYMBOL>
+
+# Financial metrics (P/E, FCF, margins, debt) - for Three-Lever & Survival
+$SKILL_DIR/scripts/fh financials <SYMBOL>
+
+# Earnings history
+$SKILL_DIR/scripts/fh earnings <SYMBOL>
+
+# Analyst recommendations - for sentiment shifts
+$SKILL_DIR/scripts/fh recommendations <SYMBOL>
+
+# Peer companies - for relative valuation
+$SKILL_DIR/scripts/fh peers <SYMBOL>
 ```
 
 **Requires:** Finnhub API key in `~/.config/finnhub/api_key`

@@ -1,0 +1,8 @@
+# Portfolio Agent Dependencies
+# No external dependencies required for basic operation
+# Python 3.9+ standard library only
+
+# Optional enhanced features:
+# pandas>=2.0.0       # For data analysis
+# matplotlib>=3.7.0   # For charting
+# yfinance>=0.2.0     # Alternative data source

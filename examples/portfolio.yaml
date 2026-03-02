@@ -1,0 +1,122 @@
+# Portfolio Agent Configuration Example
+# Copy to your workspace and customize
+
+portfolio:
+  name: "AI Infrastructure Portfolio"
+  currency: "GBP"
+  
+  holdings:
+    # Infrastructure - Low Disruption Risk
+    - symbol: VRT
+      category: infrastructure
+      thesis: "Data center cooling leader — Jevons strongly favorable"
+      when_if: WHEN
+      
+    - symbol: ANET
+      category: infrastructure
+      thesis: "High-speed networking for AI clusters"
+      when_if: WHEN
+      
+    - symbol: APH
+      category: infrastructure
+      thesis: "Connectors and cables — boring but essential"
+      when_if: WHEN
+      
+    - symbol: GLW
+      category: infrastructure
+      thesis: "Fiber optics — data transport backbone"
+      when_if: WHEN
+      
+    - symbol: CLS
+      category: infrastructure
+      thesis: "Contract manufacturing for AI servers"
+      when_if: WHEN
+      
+    - symbol: LITE
+      category: infrastructure
+      thesis: "Optical transceivers — high beta to AI buildout"
+      when_if: WHEN
+      
+    # Power - Critical Infrastructure
+    - symbol: ETN
+      category: power
+      thesis: "Power management — every data center needs it"
+      when_if: WHEN
+      
+    - symbol: CEG
+      category: power
+      thesis: "Nuclear power generation — 24/7 clean baseload"
+      when_if: WHEN
+      
+    # Compute - Higher Risk, Higher Reward
+    - symbol: CRWV
+      category: compute
+      thesis: "GPU cloud — supply constrained, execution risk"
+      when_if: TRANSITION
+      risk_notes: "Balance sheet concerns, lawsuit pending"
+      
+    - symbol: NVDA
+      category: compute
+      thesis: "GPU leader — demand overwhelming"
+      when_if: WHEN
+      
+    # Big Tech - Diversified Exposure
+    - symbol: GOOGL
+      category: big_tech
+      thesis: "Search + cloud + AI research"
+      when_if: WHEN
+      
+    - symbol: AMZN
+      category: big_tech
+      thesis: "AWS dominance + retail moat"
+      when_if: WHEN
+
+  watchlist:
+    - symbol: SMCI
+      interest: "AI server assembly — but governance concerns"
+      
+    - symbol: AMD
+      interest: "GPU alternative — catching up to NVDA"
+      
+    - symbol: AVGO
+      interest: "Custom AI chips for hyperscalers"
+
+alerts:
+  # Price movement thresholds
+  price_threshold_pct: 5
+  
+  # Keywords for news filtering
+  news_keywords:
+    - "AI"
+    - "data center"
+    - "earnings"
+    - "guidance"
+    - "analyst"
+    - "upgrade"
+    - "downgrade"
+    
+  # High priority transitions to monitor
+  monitor_transitions:
+    - from: WHEN
+      to: TRANSITION
+      action: "IMMEDIATE ALERT"
+    - from: TRANSITION
+      to: IF
+      action: "REVIEW POSITION"
+
+schedule:
+  # Timezone for all schedules
+  timezone: "Europe/London"
+  
+  # Pre-market briefing (before US open)
+  pre_market:
+    enabled: true
+    time: "13:30"  # 1:30 PM GMT = 8:30 AM ET
+    
+  # Post-market briefing (after US close)  
+  post_market:
+    enabled: true
+    time: "21:30"  # 9:30 PM GMT = 4:30 PM ET
+    
+  # Alert on significant moves only
+  alert_mode: "significant_only"

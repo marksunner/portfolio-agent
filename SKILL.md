@@ -71,6 +71,17 @@ $SKILL_DIR/scripts/portfolio.py correlation
 $SKILL_DIR/scripts/portfolio.py summary
 ```
 
+### Contrarian Scoring
+
+```bash
+# Calculate contrarian score for a position
+# Score = Tactical Severity × Structural Soundness × Jevons Favorability
+$SKILL_DIR/scripts/contrarian.py score <SYMBOL> <DECLINE%> <TACTICAL|STRUCTURAL>
+
+# Example: VRT down 15% on tactical selling
+$SKILL_DIR/scripts/contrarian.py score VRT -15 TACTICAL
+```
+
 **Requires:** Finnhub API key in `~/.config/finnhub/api_key`
 
 **Rate Limits (Free Tier):** 60 calls/minute
